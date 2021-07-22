@@ -1,0 +1,70 @@
+.gridUniv {
+    display: grid;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "gridUniv__1" "gridUniv__2";
+    
+    .gridUniv__1 {
+        grid-area: gridUniv__1;
+        flex-flow: column;
+        text-align: center;
+        color: $color_celeste-1;
+        text-shadow: 0px 0px 5px black;
+        @include dFlex;
+
+        h3 {
+            font-size: 1.5rem;
+            color:rgb(1, 150, 166);
+        }
+        li {
+            font-size: 1rem;
+            color: blanchedalmond;
+        }
+
+        @media only screen and (min-width: 600px){
+            font-size: 20px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 25px;
+            padding: 10%;
+        }
+    }
+    
+    .gridUniv__2 {
+        grid-area: gridUniv__2;
+        @include dFlex;
+        flex-flow: column wrap;
+        picture img {
+            @include dFlex;
+            width: 100%;
+            max-width: 500px;
+            
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 20px -25px 50px black;
+            }
+        }
+        p {
+            color:white;
+            text-shadow:0px 0px 5px black;
+        }
+    }
+    
+    @media (min-width: 600px) {
+        grid-template-rows: 0.4fr 1fr;
+    }
+    
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-areas: "gridUniv__1 gridUniv__2";
+    }
+}

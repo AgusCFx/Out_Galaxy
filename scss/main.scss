@@ -1,0 +1,33 @@
+// Variables
+@import "utilities/typography";
+@import "utilities/colors";
+@import "utilities/mixin";
+// Components
+@import "components/reset";
+@import "components/body";
+@import "components/buttons";
+// Body
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/titles";
+@import "layout/main-grid";
+@import "layout/form";
+@import "layout/footer";
+
+/* Marca temporal de que la pagina esta en fase de constuccion */
+.beta {
+    z-index: 2;
+    position: fixed;
+    font-size: 0.7rem;
+    width: 75%;
+    top: 5%;
+    right: -30%;
+    text-align: center;
+    transform: rotate(45deg);
+    background: linear-gradient(90deg, red, pink);
+    @media only screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+        width: 25%;
+        right: -7%;
+    }
+}

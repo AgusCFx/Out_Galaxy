@@ -1,0 +1,6 @@
+//Display Flex centrado
+@mixin dFlex ($display:Flex, $justify:center, $align:center){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
