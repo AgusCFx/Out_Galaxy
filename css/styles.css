@@ -243,8 +243,8 @@ main h1 {
 
 #advertencia {
   font-size: 1.5rem;
-  color: red;
-  -webkit-text-stroke: 1px black;
+  color: white;
+  -webkit-text-stroke: 1px red;
   margin: 10px 10%;
   padding: 10px;
   background-color: rgba(0, 183, 255, 0.199); }
