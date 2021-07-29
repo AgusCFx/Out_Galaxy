@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgusCFx/Out_Galaxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgusCFx/Out_Galaxy/issues"
+  },
+  "homepage": "https://github.com/AgusCFx/Out_Galaxy#readme",
   "description": ""
 }

@@ -6,7 +6,6 @@
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
     grid-template-areas: "gridUniv__1" "gridUniv__2";
     
     .gridUniv__1 {
@@ -15,6 +14,7 @@
         text-align: center;
         color: $color_celeste-1;
         text-shadow: 0px 0px 5px black;
+        padding: 20px;
         @include dFlex;
 
         h3 {
@@ -32,7 +32,7 @@
 
         @media only screen and (min-width: 1200px) {
             font-size: 25px;
-            padding: 10%;
+            padding: 10px;
         }
     }
     
@@ -54,10 +54,6 @@
             color:white;
             text-shadow:0px 0px 5px black;
         }
-    }
-    
-    @media (min-width: 600px) {
-        grid-template-rows: 0.4fr 1fr;
     }
     
     @media (min-width: 1200px) {
