@@ -8,8 +8,9 @@
     .headerGrid__logo {
         grid-area: headerGrid__logo;
         
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 768px) {
             @include dFlex;
+            height: 215px;
         }
     }
 }   
@@ -25,26 +26,20 @@
     animation-iteration-count: infinite;
     h1{
         font-family: $font_titles;
+        font-size: 9vw;
     }
     @keyframes text_logo_anime{ 
         0% {text-shadow: 0px 0px 20px $color_celeste-4;}
         50% {text-shadow: 0px 0px 3px white;}
         100% {text-shadow: 0px 0px 20px $color_celeste-4;}
     }
-    
-    @media only screen and (min-width: 600px){
-        font-size: 2rem;
-    
-        @media only screen and (min-width: 1200px){ 
-        font-size: 4rem;
-    }
-}
 }
     .headerGrid img {
         width: 100%;
         padding: 3px;
+        max-height: 215px;
 
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 768px) {
             width: 200px;
             @include dFlex;
         }

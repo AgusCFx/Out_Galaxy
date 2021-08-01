@@ -5,40 +5,33 @@ nav {
     a { 
         @include dFlex;
         flex-flow: column nowrap;
-        padding: 14px 30px; /* padding 14px arregla error en menuanime para desktop*/
-        font-size: 15px;
+        padding: 2px; /* padding 14px arregla error en menuanime para desktop*/
+        // font-size: 10px;
         text-decoration: none;
         color: $color_celeste-1;
         font-family: $font_navbar;
-        font-size: 1rem;
+        font-size: 13px;
+        transition: all 0.3s;
         
         &:hover {
-            font-size: 21px;
+            transform: scale(1.5);
             color:white;
             text-shadow: 0px 0px 8px $color_celeste-1, 0px 0px 20px rgb(255, 255, 255);
             background-color: rgb(0, 0, 0);
-            animation-name: menuanime;
-            animation-duration: 300ms;
-            padding-bottom: 0px;
-            
-            @keyframes menuanime{
-                0% {font-size: 15px;color: $color_celeste-1;}
-                100% {font-size: 21px;color: white; padding-bottom: 0px;}
-            }   
+            box-shadow: 0px 0px 20px $color_celeste-4;
+            // overflow: hidden; 
         }
 
-        @media only screen and (min-width: 600px){
+        @media only screen and (min-width: 768px){
             width: 20%;
-            font-size: 11px;
-        }
-        
-        @media only screen and (min-width: 1200px) {
-            font-size: 15px;
+            overflow: hidden;
         }
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 768px) {
         flex-flow: row;
-        justify-content: space-around;  
+        justify-content: space-around;
+        height: 50px;
+        overflow: hidden;
     }
 }
