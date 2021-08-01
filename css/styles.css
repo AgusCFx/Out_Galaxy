@@ -158,6 +158,8 @@ main h1 {
     .gridUniv .gridUniv__1 li {
       font-size: 1rem;
       color: blanchedalmond; }
+    .gridUniv .gridUniv__1 p {
+      padding-bottom: 20px; }
     @media only screen and (min-width: 768px) {
       .gridUniv .gridUniv__1 {
         font-size: 20px; } }
@@ -180,7 +182,8 @@ main h1 {
       transition: all 0.3s; }
       .gridUniv .gridUniv__2 picture img:hover {
         transform: scale(1.1);
-        box-shadow: 10px 10px 10px #041855; }
+        box-shadow: 10px 10px 10px #041855;
+        z-index: 1; }
     .gridUniv .gridUniv__2 p {
       color: white;
       text-shadow: 0px 0px 5px black; }
