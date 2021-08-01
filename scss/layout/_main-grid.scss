@@ -44,7 +44,7 @@
             @include dFlex;
             width: 100%;
             max-width: 500px;
-            transition: transform 0.3s;
+            transition: all 0.3s;
             
             &:hover {
                 transform: scale(1.1);

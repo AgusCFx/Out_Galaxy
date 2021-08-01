@@ -177,7 +177,7 @@ main h1 {
       align-items: center;
       width: 100%;
       max-width: 500px;
-      transition: transform 0.3s; }
+      transition: all 0.3s; }
       .gridUniv .gridUniv__2 picture img:hover {
         transform: scale(1.1);
         box-shadow: 10px 10px 10px #041855; }
