@@ -24,11 +24,9 @@ body {
   margin: 20px 0px;
   width: 100%; }
   .botonera input {
-    background: #224480;
-    color: #34eefd;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px; }
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    width: 100%; }
     .botonera input:hover {
       background: black;
       border-bottom: 2px solid #34eefd;
@@ -222,6 +220,7 @@ main h1 {
     align-items: flex-start;
     justify-content: space-around; }
     .formulario .formulario__respuesta input, .formulario .formulario__respuesta select {
+      width: 100%;
       background: black;
       color: #34eefd; }
   .formulario .formulario__botonera {
