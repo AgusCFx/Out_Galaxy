@@ -6,6 +6,7 @@ nav {
         @include dFlex;
         flex-flow: column nowrap;
         padding: 2px;
+        height: 50px;
         text-decoration: none;
         color: $color_celeste-1;
         font-family: $font_navbar;
@@ -27,7 +28,7 @@ nav {
             overflow: hidden;
         }
     }
-
+    
     @media only screen and (min-width: 768px) {
         flex-flow: row;
         justify-content: space-around;
