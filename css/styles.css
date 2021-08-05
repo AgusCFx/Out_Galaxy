@@ -26,6 +26,7 @@ body {
   width: 100%; }
   .botonera input {
     padding: 5px;
+    height: 45px;
     background: rgba(255, 255, 255, 0.25);
     width: 100%; }
     .botonera input:hover {
@@ -96,6 +97,7 @@ nav {
     align-items: center;
     flex-flow: column nowrap;
     padding: 2px;
+    height: 50px;
     text-decoration: none;
     color: #34eefd;
     font-family: "Bungee", cursive;
