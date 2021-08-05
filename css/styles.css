@@ -11,7 +11,7 @@ body {
 
 .body__center {
   max-width: 1280px;
-  min-width: 480px;
+  min-width: 300px;
   background-image: url("../img/fondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
