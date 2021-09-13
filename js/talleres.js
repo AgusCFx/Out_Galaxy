@@ -9,10 +9,9 @@ class Comunication {
     }
 
     nave(param){
-        alert('si funcoina')
         setTimeout(() => {
             alert('Gracias ' + this.nombre + ' ' + this.apellido + ', su mensaje fue recibido por ' + param)
-        }, 3000);    
+        }, 1500);    
     }
 
     setTurno(param){
@@ -43,16 +42,61 @@ function dataMsj (){
 
 const ERF_mensaje = document.getElementById('ERF_mensaje')
 const ERF_turno = document.getElementById('ERF_turno')
-// const botonERF = document.getElementById('ERF_mensaje')
-// const botonERF = document.getElementById('ERF_mensaje')
-// const botonERF = document.getElementById('ERF_mensaje')
+
+const ESC_mensaje = document.getElementById('ESC_mensaje')
+const ESC_turno = document.getElementById('ESC_turno')
+
+const SSS_mensaje = document.getElementById('SSS_mensaje')
+const SSS_turno = document.getElementById('SSS_turno')
+
+const FSA_mensaje = document.getElementById('FSA_mensaje')
+const FSA_turno = document.getElementById('FSA_turno')
+
+const CRC_mensaje = document.getElementById('CRC_mensaje')
+const CRC_turno = document.getElementById('CRC_turno')
+
 
 ERF_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj();
     uno.nave(ERF);
 })
-
 ERF_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
     uno.setTurno(ERF)
+})
+
+ESC_mensaje.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.nave(ESC)
+})
+ESC_turno.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.setTurno(ESC)
+})
+
+SSS_mensaje.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.nave(SSS)
+})
+SSS_turno.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.setTurno(SSS)
+})
+
+FSA_mensaje.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.nave(FSA)
+})
+FSA_turno.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.setTurno(FSA)
+})
+
+CRC_mensaje.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.nave(CRC)
+})
+CRC_turno.addEventListener('click', ()=>{
+    let uno = dataMsj()
+    uno.setTurno(CRC)
 })
