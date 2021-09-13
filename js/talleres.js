@@ -1,3 +1,4 @@
+// Creacion de clases
 class Comunication {
     constructor(nombre, apellido, contacto, mensaje) {
         this.nombre = nombre;
@@ -20,25 +21,14 @@ class Comunication {
         alert('Gracias ' + this.nombre + ' ' + this.apellido + ' por realizar su reserva online en ' + param + ', pronto un asesor se pondrá en contacto con usted para coordinar horario de reserva')
     }
 }
-
-const ERF = "Estacion Rober Frontend";
-const ESC = "Estacion Shusha-craft";
-const SSS = "Super System32 servicios";
-const FSA = "Fireport SA";
-const CRC = "Cryo Rex corp";
+// ---
+// Creacion de Variables
+const estacion = ["Estacion Rober Frontend","Estacion Shusha-craft","Super System32 servicios","Fireport SA","Cryo Rex corp"];
 
 let nombre;
 let apellido;
 let contacto;
 let mensaje;
-
-function dataMsj (){
-    nombre = prompt("Ingrese su nombre");
-    apellido = prompt("Ingrese apellido");
-    contacto = prompt("Ingrese mail o medio de contacto");
-    mensaje = prompt("Ingrese su mensaje");
-    return new Comunication(nombre,apellido,contacto,mensaje)
-}
 
 const ERF_mensaje = document.getElementById('ERF_mensaje')
 const ERF_turno = document.getElementById('ERF_turno')
@@ -54,49 +44,58 @@ const FSA_turno = document.getElementById('FSA_turno')
 
 const CRC_mensaje = document.getElementById('CRC_mensaje')
 const CRC_turno = document.getElementById('CRC_turno')
-
-
+// ---
+// Creacion de funciones
+function dataMsj (){
+    nombre = prompt("Ingrese su nombre");
+    apellido = prompt("Ingrese apellido");
+    contacto = prompt("Ingrese mail o medio de contacto");
+    mensaje = prompt("Ingrese su mensaje");
+    return new Comunication(nombre,apellido,contacto,mensaje)
+}
+// ---
+// Uso de addEventListener
 ERF_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj();
-    uno.nave(ERF);
+    uno.nave(estacion[0]);
 })
 ERF_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.setTurno(ERF)
+    uno.setTurno(estacion[0])
 })
 
 ESC_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.nave(ESC)
+    uno.nave(estacion[1])
 })
 ESC_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.setTurno(ESC)
+    uno.setTurno(estacion[1])
 })
 
 SSS_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.nave(SSS)
+    uno.nave(estacion[2])
 })
 SSS_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.setTurno(SSS)
+    uno.setTurno(estacion[2])
 })
 
 FSA_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.nave(FSA)
+    uno.nave(estacion[3])
 })
 FSA_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.setTurno(FSA)
+    uno.setTurno(estacion[3])
 })
 
 CRC_mensaje.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.nave(CRC)
+    uno.nave(estacion[4])
 })
 CRC_turno.addEventListener('click', ()=>{
     let uno = dataMsj()
-    uno.setTurno(CRC)
+    uno.setTurno(estacion[4])
 })
