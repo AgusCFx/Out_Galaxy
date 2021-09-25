@@ -15,7 +15,6 @@ btnSetNickName.addEventListener('click', (e) => {
 //     age: '',
 //     galaxy: ''
 // };
-
 // btnSetNickName.addEventListener('click', (e) => {
 //     e.preventDefault();
 //     user.nickname = setNickName.value;
