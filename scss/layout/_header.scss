@@ -19,6 +19,7 @@
     grid-area: headerGrid__textLogo;
     color: $color_celeste-1;
     @include dFlex;
+    flex-direction: column;
     text-align: center;
     h1{
         -webkit-text-stroke: 1px black;
@@ -36,6 +37,9 @@
             50% {text-shadow: 0px 0px 3px white;}
             100% {text-shadow: 0px 0px 20px $color_celeste-4;}
         }
+    }
+    h2{
+        font-size: 1em;
     }
 }
     .headerGrid img {

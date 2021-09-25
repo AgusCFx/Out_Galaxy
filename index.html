@@ -22,6 +22,7 @@
             <header class="headerGrid">
                 <div class="headerGrid__textLogo">
                     <h1>Out Galaxy</h1>
+                    <h2>Bienvenido <span id="getNickName"></span></h2>
                 </div>
                 <div class="headerGrid__logo">
                     <img src="img/logo.svg" alt="Out Galaxy Logo">
@@ -85,7 +86,8 @@
                     </div>
                     <div class="changeName">
                         <label for="user">Ingrese su nombre:</label>
-                        <input type="text" name="user" placeholder="Usuario">
+                        <input id="setNickName" type="text" name="user" placeholder="Usuario">
+                        <button id="btnSetNickName" type="submit">Ingresar</button>
                     </div>
                     <div class="firm">
                         <p>© 3021 Out Galaxy, todos los derechos reservados.</p>
@@ -93,6 +95,7 @@
                     </div>
                 </div>
             </footer>
-        </div>   
+        </div>
+        <script src="js/visitante.js"></script>   
     </body>
 </html>
