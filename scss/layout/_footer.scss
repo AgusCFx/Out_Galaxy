@@ -1,11 +1,60 @@
 footer {
-    @include dFlex;
-    background: rgba(0, 0, 0, 0.75);
-    color: $color_celeste-4;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    max-width: 1280px;
-    height: 30px;
-    border-top: 2px solid $color_azul_1;
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        background: rgba(0, 0, 0, 0.75);
+        color: $color_celeste-4;
+        position: relative;
+        bottom: 0%;
+        width: 100%;
+        max-width: 1280px;
+        height: 125px;
+        border-top: 2px solid $color_azul_1;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "changeName"
+        "themes"
+        "firm";
+
+        @media only screen and(min-width: 900px){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "changeName Themes"
+            "firm Themes";
+        }
+        
+        .themes {
+            grid-area: Themes;
+            .container__theme{
+                @include dFlex;
+            }
+        }
+        
+        .changeName {
+            grid-area: changeName;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            width: 90%;
+            input, select, textarea{
+                background: black;
+                color: $color_celeste-1;
+            }
+            @media only screen and (min-width: 768px){
+            }
+        }
+        
+        .firm {
+            grid-area: firm;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+    }
+    
+    
+    // @include dFlex;
 } 
