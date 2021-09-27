@@ -1,3 +1,5 @@
+// // Realizar esta pagina reemplazando prompts y alerts por modals
+
 // Creacion de clases
 class Comunication {
     constructor(nombre, apellido, contacto, mensaje) {
