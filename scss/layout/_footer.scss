@@ -34,6 +34,13 @@ footer {
                 display:flex;
                 flex-flow: row wrap;
                 justify-content: space-around;
+                a{
+                    text-decoration: none;
+                    &:hover {
+                        border: 2px solid $color_azul_4;
+                        box-shadow: white 0px 0px 5px;
+                    }
+                }
                 .btn_theme{
                     @include dFlex;
                     width:150px;

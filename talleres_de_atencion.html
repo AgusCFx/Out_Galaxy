@@ -16,13 +16,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link id="themes" rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class="body__center">
             <header class="headerGrid">
                 <div class="headerGrid__textLogo">
                     <h1>Out Galaxy</h1>
+                    <h2>Bienvenido <span id="getNickName"></span></h2>
                 </div>
                 <div class="headerGrid__logo">
                     <img src="img/logo.svg" alt="Out Galaxy Logo">
@@ -164,9 +165,30 @@
                 </article>
             </main>
 
-            <footer>© 3021 Out Galaxy, todos los derechos reservados.</footer>
+            <footer>
+                <div class="footer_grid">
+                    <div class="themes">
+                        <p>Seleccione un tema visual</p>
+                        <div class="container__themes">
+                            <a href="#" class="btn_theme" id="blind_theme">Cegador</a>
+                            <a href="#" class="btn_theme" id="normal_theme">Normal</a>
+                            <a href="#" class="btn_theme" id="hack_theme">Hack</a>
+                        </div>
+                    </div>
+                    <div class="changeName">
+                        <label for="user">Ingrese su nombre:</label>
+                        <input id="setNickName" type="text" name="user" placeholder="Usuario">
+                        <button id="btnSetNickName" type="submit">Ingresar</button>
+                    </div>
+                    <div class="firm">
+                        <p>© 3021 Out Galaxy, todos los derechos reservados.</p>
+                        <p>Agustin Fernandez - Estudiante Full Stack</p>
+                    </div>
+                </div>
+            </footer>
         </div>
-
         <script src="js/talleres.js"></script>
+        <script src="js/themes.js"></script>
+        <script src="js/visitante.js"></script>   
     </body>
 </html>

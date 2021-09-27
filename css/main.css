@@ -494,6 +494,14 @@ footer .footer_grid .themes .container__themes {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+footer .footer_grid .themes .container__themes a {
+  text-decoration: none;
+}
+footer .footer_grid .themes .container__themes a:hover {
+  border: 2px solid #041855;
+  -webkit-box-shadow: white 0px 0px 5px;
+          box-shadow: white 0px 0px 5px;
+}
 footer .footer_grid .themes .container__themes .btn_theme {
   display: Flex;
   -webkit-box-pack: center;
