@@ -4,8 +4,8 @@ let getNickName = document.getElementById('getNickName');
 let nickName;
 let viewNickName = document.createElement("span");
 
-function nickNameAppendChild(nickName) {
-    viewNickName.innerHTML = `<span>${nickName}</span>`;
+function nickNameAppendChild(nN) {
+    viewNickName.innerHTML = `<span>${nN}</span>`;
     getNickName.appendChild(viewNickName);
 }
 
