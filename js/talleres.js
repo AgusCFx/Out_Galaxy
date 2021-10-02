@@ -153,3 +153,5 @@ $(document).ready(function(){
             }
     });
 })
+
+// Solucionar error que no respeta los cambios de tema visual al cambiar de seleccion. Posible solucion: realizar .text en luga de .html de cada etiqueta para que desde el html original ya queden declarados las class que son llamadas desde el CSS. (mucho trabajo :( pero queda pendiente para la 4ta entrega);
