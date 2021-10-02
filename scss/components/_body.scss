@@ -3,6 +3,11 @@ body {
     @include dFlex;
 }
 
+.talleres{
+    @include dFlex;
+    flex-direction: column;
+}
+
 .body__center {
 max-width: 1280px;
 min-width: 300px;

@@ -17,6 +17,20 @@ body {
           align-items: center;
 }
 
+.talleres {
+  display: Flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .body__center {
   max-width: 1280px;
   min-width: 300px;
@@ -52,14 +66,15 @@ body {
           flex-flow: column wrap;
   margin: 20px 0px;
   width: 100%;
+  max-width: 600px;
 }
-.botonera input {
+.botonera input, .botonera select {
   padding: 5px;
   height: 45px;
   background: rgba(255, 255, 255, 0.25);
   width: 100%;
 }
-.botonera input:hover {
+.botonera input:hover, .botonera select:hover {
   background: black;
   border-bottom: 2px solid #34eefd;
   color: white;
