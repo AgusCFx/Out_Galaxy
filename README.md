@@ -9,7 +9,11 @@ Sobre mi y el proyecto:
 Soy Agustin Fernandez y este proyecto está en edicion mientras haga la carrera de Full Stack en Coderhouse.
 
 Usando este proyecto:
-- Aprobado con 10puntos la clase de Desarrollo Web (HTML/CSS), con SASS, sin Bootstrap.
-- En curso Javascript
+- Desarrollo Web: Aprobado con 10/10puntos (HTML/CSS), con SASS, sin Bootstrap.
+- Javascript: En curso.
 - React (no iniciado)
 - BackEnd (no iniciado)
+
+
+Changelog:
+v0.1 desarrollo web: terminado
