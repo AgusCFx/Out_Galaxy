@@ -1,5 +1,6 @@
 // Variables temporales
 // NOTA: Enviar las siguientes variables a un JSON cuando aprenda AJAX y transformarlos en array de objetos para identificar por separado cada etiqueta.
+// Solucionar error que no respeta los cambios de tema visual al cambiar de seleccion. Posible solucion: realizar .text en luga de .html de cada etiqueta para que desde el html original ya queden declarados las class que son llamadas desde el CSS. (mucho trabajo :( pero queda pendiente para la 4ta entrega);
 
 let ERF = `<article class="gridUniv">
 <div class="gridUniv__1">
@@ -134,24 +135,24 @@ $(document).ready(function(){
     
     $("#selectTaller").change(function(){
         let setTaller = $("#selectTaller").val();
+        $("#showTaller").toggle(200);
+        $("#showTaller").toggle(500);
             switch (setTaller) {
                 case "ERF":
-                    $("#showTaller").html(ERF);
-                    break;
+                        $("#showTaller").html(ERF);
+                        break;
                 case "ESC":
-                    $("#showTaller").html(ESC);
-                    break;
+                        $("#showTaller").html(ESC);
+                        break;
                 case "SSS":
-                    $("#showTaller").html(SSS);
-                    break;
+                        $("#showTaller").html(SSS);
+                        break;
                 case "FSA":
-                    $("#showTaller").html(FSA);
-                    break;
+                        $("#showTaller").html(FSA);
+                        break;
                 case "CRC":
-                    $("#showTaller").html(CRC);
-                    break
-            }
+                        $("#showTaller").html(CRC);
+                        break
+            }   
     });
 })
-
-// Solucionar error que no respeta los cambios de tema visual al cambiar de seleccion. Posible solucion: realizar .text en luga de .html de cada etiqueta para que desde el html original ya queden declarados las class que son llamadas desde el CSS. (mucho trabajo :( pero queda pendiente para la 4ta entrega);
