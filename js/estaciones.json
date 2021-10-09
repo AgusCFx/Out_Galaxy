@@ -1,0 +1,42 @@
+[
+    {
+        "id": "ERF",
+        "estacion": "Estacion Rober Frontend",
+        "servicios": ["Prioridad para milicia integrante de las fuerzas de Frontend y aliados", "Venta / Reparacion / Instalacion"],
+        "requisitos": ["Cualquier arma a la vista de la nave principal debe ser claramente desactivado/guardado a la vista, en caso de armas fijas avise antes por comunicador Watsategram"], 
+        "imagenes": "img/estacion_rober_frontend.jpg",
+        "imagenesSource": "img/estacion_rober_frontend-FM.jpg"
+    },
+    {
+        "id": "ESC",
+        "estacion": "Estacion Shusha-craft",
+        "servicios": ["Servicios especificos para cazarecompensas", "Compra/Venta partes usadas"],
+        "requisitos": ["Solo con registro de la ciudad leal de Artofrotch, quien no presente el mismo será ejecutado, o regresado a sus padres segun el caso lo amerite", "Prohibido el uso de tecnologia reaudiano dentro de las instalaciones, si usted no quiere enfermarse nosotros menos"],
+        "imagenes": "img/estacion_shusha-craft.jpg",
+        "imagenesSource": "img/estacion_shusha-craft-FM.jpg"
+    },
+    {
+        "id": "SSS",
+        "estacion": "Super System32 servicios",
+        "servicios": ["Restauracion / Venta / Colocacion", "Atencion en horario de purga global"],
+        "requisitos": ["En horario de Purga Global realizar aviso al menos 5 fuxminutos antes, quien se acerque a menos de 200 fuxmetros de la sucursal sin aviso será sacrificado", "En horario de Purga Global necesario presentarse con bandera blanca de rendicion y prestamo de servicio De Fran Dreslicar sobre el transporte con el cual se presentará, no genere conflictos, ya los generará después."],
+        "imagenes": "img/super_system32_servicios.jpg",
+        "imagenesSource": "img/super_system32_servicios-FM.jpg"
+    },
+    {
+        "id": "FSA",
+        "estacion": "Fireport Sociedad Anonima",
+        "servicios": ["Servicios especificos para cazarecompensas"],
+        "requisitos": ["Aviso previo, atencion por turnos agendados"],
+        "imagenes": "img/fireport_sa.jpg",
+        "imagenesSource": "img/fireport_sa-FM.jpg"
+    },
+    {
+        "id": "CRC",
+        "estacion": "Cryo Rex Corp",
+        "servicios": ["Compra/Venta de partes usadas", "Alineacion y balanceo de propulsores"],
+        "requisitos": ["No aceptamos seres humanoides de mas de 5 brazos"],
+        "imagenes": "img/cryo_rex_corp.jpg",
+        "imagenesSource": "img/cryo_rex_corp-FM.jpg"
+    }
+]

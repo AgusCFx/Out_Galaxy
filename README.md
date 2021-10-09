@@ -16,4 +16,12 @@ Usando este proyecto:
 
 
 Changelog:
+v0.4.3.001 
+    Fix:
+        Div que mostraba los talleres no respetaba los temas seleccionados por el usuario al realizar el cambio, (aun falta mejorar la visualizacion del cambio dentro de ese div).
+        Eliminado animacion al mostrar cambios de taller (pendiente agregar en proximas actualizaciones).
+        Herobrine eliminado.
+    Changes:
+        Informacion sobre las estaciones de atencion fue movido a un JSON local en vez de ocupar variables en JS y presentarse con innerHTML.
+        Migracion a JQuery (por requisito de tarea para Coderhouse).
 v0.1 desarrollo web: terminado
