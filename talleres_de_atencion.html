@@ -61,8 +61,7 @@
                                                 <li>Cualquier arma a la vista de la nave principal debe ser claramente desactivado/guardado a la vista, en caso de armas fijas avise antes por comunicador Watsategram</li>
                                             </ul>
                                             <div class="botonera">
-                                                <input type="button" id="CRC_mensaje" value="Mensaje">
-                                                <input type="button" id="CRC_turno" value="Reservar Turno">
+                                                <button id="makeMensaje">Mensaje / Reservar Turno</button>
                                             </div>
                                 </div>
                                 <div class="gridUniv__2">
@@ -73,7 +72,20 @@
                                 </div>
                                 </article>
                         </div>
-
+                        <form id="formContact" class="gridUniv__1">
+                            <h3>Enviar mensaje a <span id="formContacto__estacion"></span></h3>
+                            <label for="name" class="botonera">Nombre: 
+                                <input type="text" id="name" name="name" placeholder="Nombre/Apellido o ID">
+                            </label>
+                            <label for="starship" class="botonera">Nave: 
+                                <input type="text" id="starship" name="starship" placeholder="Marca/modelo de nave">
+                            </label>
+                            <label for="watsategram" class="botonera">Watsategram: <input type="text" id="watsategram" name="watsategram" placeholder="Watsategram"></label>
+                            <label for="mensaje" class="botonera">Mensaje: 
+                                <textarea name="mensaje" id="formContact__Mensaje" cols="30" rows="4"></textarea>
+                            </label>
+                            <button type="submit" id="formContact__Submit" class="botonera">Enviar</button>
+                        </form>
                     </div>
             </main>
 

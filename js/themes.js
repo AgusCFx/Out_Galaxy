@@ -19,7 +19,6 @@ $(document).ready(function(){
     
     function changeBodyTheme(prop){
         $('#body_container').removeClass('body_normal_theme body_blind_theme body_hack_theme').addClass(styles[`${prop}`].theme);
-        console.log(prop);
         let gridUniv = $('.gridUniv');
         let gridUniv__1 = $('.gridUniv__1');
         for (let i = 0; i < gridUniv.length; i++){ gridUniv[i].style.border = styles[`${prop}`].border};

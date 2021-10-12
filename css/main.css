@@ -68,13 +68,13 @@ body {
   width: 100%;
   max-width: 600px;
 }
-.botonera input, .botonera select {
+.botonera input, .botonera select, .botonera button, .botonera textarea {
   padding: 5px;
   height: 45px;
   background: rgba(255, 255, 255, 0.25);
   width: 100%;
 }
-.botonera input:hover, .botonera select:hover {
+.botonera input:hover, .botonera select:hover, .botonera button:hover, .botonera textarea:hover {
   background: black;
   border-bottom: 2px solid #34eefd;
   color: white;
@@ -477,6 +477,10 @@ main h1 {
 }
 #advertencia p {
   font-family: "Bungee", cursive;
+}
+
+#formContact {
+  display: none;
 }
 
 footer .footer_grid {
