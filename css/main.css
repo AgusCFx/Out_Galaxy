@@ -479,10 +479,6 @@ main h1 {
   font-family: "Bungee", cursive;
 }
 
-#formContact {
-  display: none;
-}
-
 footer .footer_grid {
   display: -ms-grid;
   display: grid;

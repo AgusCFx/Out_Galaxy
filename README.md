@@ -16,6 +16,13 @@ Usando este proyecto:
 
 
 Changelog:
+v0.4.3.002
+    Fix:
+        Funciones de selector de taller ahora muestran informacion completa.
+        Boton de contacto para las naves ahora despliega un formulario para realizar dicho contacto (aún no funcional).
+        Animaciones reparadas y mejoradas.
+    Changes:
+        Formulario de contacto será suprimido proximamente ya que se podrá contactar con cada Estacion individualmente mediante el apartado talleres (se mejorará y tendrá funcionalidad al aprender Backend :D).
 v0.4.3.001 
     Fix:
         Div que mostraba los talleres no respetaba los temas seleccionados por el usuario al realizar el cambio, (aun falta mejorar la visualizacion del cambio dentro de ese div).

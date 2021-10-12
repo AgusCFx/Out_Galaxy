@@ -1,7 +1,7 @@
 $(document).ready(function(){
     let nickName;
 
-    function nickNameShow(nN) {
+    function nickNameShow() {
         $('#getNickName').text(nickName); 
     }
     
