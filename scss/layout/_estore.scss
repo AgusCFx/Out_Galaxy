@@ -1,0 +1,90 @@
+.containerEstore{
+    @include dFlex;
+    flex-flow: column nowrap;
+    
+    .filtroEstore{
+        color: $color_celeste-1;
+        @include dFlex;
+        margin-top: 15px 0px;
+        padding: 5px;
+        flex-wrap: wrap;
+            label{
+                margin: 0px 15px;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    
+    .btnSetFilter{
+        max-width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .viewEstore{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: center;
+    
+        .product__tarjet{
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 300px;
+    
+            .product__tarjet__type{
+                color: $color_celeste-4;
+                text-shadow: 0px 2px 0px black;
+            }
+            .product__tarjet__mark{
+                color: $color_celeste-2;
+                font-size: 2rem;
+                text-shadow: 0px 4px 0px black;
+            }
+            .product__tarjet__model{
+                color: $color_celeste-1;
+                font-size: 1.5rem;
+                text-shadow: 0px 2px 0px black;
+            }
+            .product__tarjet__info{
+                display: none;
+                text-align: center;
+                padding: 2%;
+                color: $color_celeste-1;
+                text-shadow: 0px 2px 0px black;
+                background-color: $color_azul_3;
+                box-shadow: 0px 0px 20px $color_azul_4;
+            }
+            .product__tarjet__img{
+                @include dFlex;
+                min-height: 330px;
+                img{
+                    width: 100%;
+                }
+            }
+            .product__tarjet__price{
+                color: $color_celeste-1;
+                font-size:2.5rem;
+                text-shadow: 0px 1px 0px black;
+            }
+            .product__tarjet__btns{
+                .product__tarjet__btns__sec{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    button{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

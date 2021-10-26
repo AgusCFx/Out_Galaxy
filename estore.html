@@ -30,66 +30,37 @@
             </header>
             <nav>
                 <a href="index.html">Inicio</a>
-                <a href="estore">E-Store</a>
+                <a href="estore.html">E-Store</a>
                 <a href="sobre_nosotros.html">Sobre Nosotros</a>
                 <a href="talleres_de_atencion.html">Talleres</a>
                 <a href="faq.html">FaQ</a>
             </nav>
             <main>
-                <h1>Formulario de contacto</h1>
-                    <div class="containerEcom">
-                        <div class="filtroEcom"></div>
-                        <seccion class="viewEcom">
-                            <article class="Product__tarjet">
-                                <div class="Product__info"></div>
-                                
-                            </article>
+                <h1>E-Store Oficial</h1>
+                    <div class="containerEstore">
+                        <div class="filtroEstore">
+                            <h2>Filtro: </h2>
+                            <form id="filterForm">
+                                <label for="armamento">Armamento <input id="checkArmamento" name="armamento" type="checkbox" value="Armamento Civil"></label>
+                                <label for="propulsor">Propulsor <input id="checkPropulsor" name="propulsor" type="checkbox" value="Propulsor"></label>
+                                <label for="escudo">Escudo <input id="checkEscudo" name="escudo" type="checkbox" value="Escudo"></label>
+                                <label for="asistente">Asistente <input id="checkAsistente" name="asistente" type="checkbox" value="Asistente Neuro-Robotico"></label>
+                                <div class="botonera btnSetFilter">
+                                    <button id="setFilter" type="submit">Aplicar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <seccion id="viewEstore" class="viewEstore">
                         </seccion>
+                        <section>
+                            <div id="viewCarrito">
+                            </div>
+                            <div class="botonera">
+                                <button id="resetCarrito">Vaciar carrito</button>
+                                <button id="buyCarrito">Pagar</button>
+                            </div>
+                        </section>
                     </div>
-
-
-
-
-
-
-
-
-<!--                 
-                <section id="advertencia">
-                    <p>Atención: Debido a las disputas establecidas por los reinos de Andromeda II, Centaurus A, M66 y Pequeña Nube de Magallanes sobre la libre navegación y comercio en dichas galaxias no estamos realizando ningún servicio en estos lugares ni para residentes nativos de los mismos, GLORY TO ARSTOTZKA!</p>
-                </section>
-                
-                <form class="formulario">
-                    <div class="formulario__consulta">
-                        <label for="Nombre">Nombre y Apellido o ID</label>
-                        <label for="razon_de_contacto">Razon de contacto</label>
-                        <label for="localizacion">Localizacion</label>
-                        <label for="raza">Raza</label>
-                        <label for="mensaje">Mensaje</label>
-                    </div>
-                    <div class="formulario__respuesta">
-                        <input type="text" name="nombre" placeholder=" escriba aquí">
-                        <input type="text" name="razon_de_contacto" placeholder=" escriba aquí">
-                        <input type="text" name="localizacion" placeholder=" escriba aquí">
-                        <select name="raza">
-                            <option value="human">Human</option>
-                            <option value="meeseeks">Mr. Meeseeks</option>
-                            <option value="gazorpians">Gazorpians</option>
-                            <option value="gromflomites">Gromflomites</option>
-                            <option value="cronenbergs">Cronenbergs</option>
-                            <option value="zigerions">Zigerions</option>
-                        </select>
-                        <input type="text" name=mensaje placeholder=" escriba aquí">
-                    </div>
-                    <div class="formulario__botonera">
-                        <input class="submit_form" type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar Formulario">
-                        <a href="https://youtu.be/OBQE_TNI7zw">
-                            <input type="button" value="Glory to ARSTOTZKA">
-                        </a>
-                    </div>
-                </form>
-            </main> -->
             <footer>
                 <div class="footer_grid">
                     <div class="themes">
@@ -113,7 +84,7 @@
             </footer>
         </div>
         <script src="js/jquery-3.6.0.min.js"></script>
-
+        <script src="js/estore.js"></script>
         <script src="js/themes.js"></script>
         <script src="js/visitante.js"></script>   
     </body>

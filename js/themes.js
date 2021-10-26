@@ -1,5 +1,5 @@
 $(document).ready(function(){
-// Objetos que contienn las modificaciones para editar los temas
+// Objetos que contienen las modificaciones para editar los temas
     let styles = {
         style1: {
             border: "1px solid black",

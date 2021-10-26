@@ -16,6 +16,14 @@ Usando este proyecto:
 
 
 ## Changelog:
+v0.4.4.002 (edit)
+- Fix:
+    > estore.html al seleccionarse nuevamente su propio link dentro del Navbar llevaba a una pagina inexistente.
+
+    > cards de E-Store no presentaban altura y alineacion correcta.
+- Notes:
+    > La pagina E-Store esta sufriendo cambios continuos para mejorar el proyecto antes de presentarse como ultimo Proyecto Final, me quedan pocos dias para presentarlo y mi ansiedad de querer agregar mas cosas para mejorarlo no es del todo útil.
+
 v0.4.4.001
 - Fix:
     > Readme.md reparado escritura de Changelog, ahora respeta las separaciones y tiene mejor legibilidad.

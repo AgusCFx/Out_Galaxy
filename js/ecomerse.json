@@ -1,0 +1,106 @@
+[
+    {
+        "type": "Armamento Civil",
+        "mark": "STORM",
+        "model": "Gladiator",
+        "info": "Poder y miedo en unos 2,5fluxMetros de largo para limpiar problemas dejando un ligero aroma a mensaje de 'no lo es todo'",
+        "img": "img/e-comerce/storm_arma_gladiator.png",
+        "price": 24000
+    },
+    {
+        "type":"Armamento Civil",
+        "mark": "STORM",
+        "model": "Mox",
+        "info": "Mox es la solucion conflictiva que su nave/base requieren para mulptiples propositos, adaptable a sistemas de seguimiento semi-automaticos, las pilas se venden por separado.",
+        "img": "img/e-comerce/storm_arma_mox.png",
+        "price": 39000
+    },
+    {
+        "type":"Armamento Civil",
+        "mark":"STORM",
+        "model":"MoxPro",
+        "info": "Mox en su version mas seria y con sobrepasado de esteroides, adaptable a sistemas de seguimiento automatico, brindando 2 ejes de 320º haciendolo practicamente la mejor version versatil desatendida.",
+        "img": "img/e-comerce/storm_arma_moxPro.png",
+        "price": 52000
+    },
+    {
+        "type":"Armamento Civil",
+        "mark":"CRONOX",
+        "model":"Dialogo",
+        "info":"Los problemas se arreglan rapido, sencillo, con Dialogo",
+        "img":"img/e-comerce/cronox_arma_dialogo.png",
+        "price": 76000
+    },
+    {
+        "type":"Asistente Neuro-Robotico",
+        "mark":"GROUND",
+        "model":"Chapi",
+        "info":"Materiales de flexion frontorx hacen a este asistente la respueta rapida a las necesidades cotidianas de pilotos y tripulantes, habilitado por comando de voz, ejemplo: 'Ok Chapi, derribemos esas Glomformitas'",
+        "img":"img/e-comerce/ground_asistente_chapi.png",
+        "price": 512000
+    },
+    {
+        "type":"Asistente Neuro-Robotico",
+        "mark":"GROUND",
+        "model":"Gum Gum",
+        "info":"'Gum Gum gustar servir a tripulante humano, Gum Gum entender conceptos avanzados de mantenimiento de naves mineralizadoras,destructoras, piratas, militares... hay Gum Gums que quieren ver el universo arder",
+        "img":"img/e-comerce/ground_asistente_gumGum.png",
+        "price": 450000 
+    },
+    {
+        "type":"Asistente Neuro-Robotico",
+        "mark":"PHANTONS",
+        "model":"Bimbo",
+        "info":"Amigable con entornos medicos o pedagogicos Bimbo es la respueta a la necesidad de informacion inmediata y analisis medico en caso de heridas leves, funciona a energia electrica o recarga desde su compartimento especial con sangre AB+",
+        "img":"img/e-comerce/phantons_asistente_bimbo.png",
+        "price": 170000
+    },
+    {
+        "type":"Asistente Neuro-Robotico",
+        "mark":"PHANTONS",
+        "model":"Mimi&Lulu",
+        "info":"Actualizacion de Mimi 4.1 que potencia y expande su funcionalidad siendo 2 asistentes completos para toda situacion. 'No es bueno que Mimi este solo, voy a hacerle una Robot. Luego de eso, le extraje un capacitor y con ese capacitor e creado a Lulu'",
+        "img":"img/e-comerce/phantoms_asistente_mimiAndLulu.png",
+        "price": 700000
+    },
+    {
+        "type":"Propulsor",
+        "mark":"MAGNIF",
+        "model":"Lol",
+        "info":"Clasico y fiel, garantizados por el propio Melon Ducks que al aterrizar no explotan",
+        "img":"img/e-comerce/magnif__propulsor_lol.png",
+        "price": 44000 
+    },
+    {
+        "type":"Propulsor",
+        "mark":"MAGNIF",
+        "model":"Mega",
+        "info":"Adaptado para golpe de velocidad en nvez ligeras proporciona un escape excelente en un abrir y cerrar de ojos",
+        "img":"img/e-comerce/magnif_propulsor_mega.png",
+        "price": 70000
+    },
+    {
+        "type":"Propulsor",
+        "mark":"MAGNIF",
+        "model":"Triunfo",
+        "info":"Los saltos de espacio/tiempo nunca fueron tan facinantes como los hace Triunfo, años de experiencia avalan a MAGNIF CO. para mostrar que más allá de cualquier luna visible está nuestro destino, llegar es un Triunfo.",
+        "img":"img/e-comerce/magnif_propulsor_triunfo.png",
+        "price": 98000
+    },
+    {
+        "type":"Escudo",
+        "mark":"MAGNIF",
+        "model":"B82",
+        "info":"Escudo ligero para no recibir ataques como buen CT, protege de todo excepto de Flashbacks",
+        "img":"img/e-comerce/magnif_escudo_b82.png",
+        "price": 750000
+    },
+    {
+        "type":"Escudo",
+        "mark":"MAGNIF",
+        "model":"Lalatina",
+        "info":"Anteriormente conocida como Darkness, es un escudo que se hace mas fuerte cuanto mas golpes recibe, realiza ruidos extraños al ser impactado pero es lo normal en estos modelos",
+        "img":"img/e-comerce/magnif_escudo_lalatina.png",
+        "price": 910000
+    }
+]
