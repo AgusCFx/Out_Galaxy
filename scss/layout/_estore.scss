@@ -2,6 +2,10 @@
     @include dFlex;
     flex-flow: column nowrap;
     
+    h2{
+        color: $color_celeste-1;
+    }
+
     .filtroEstore{
         color: $color_celeste-1;
         @include dFlex;
@@ -84,6 +88,22 @@
                         width: 50%;
                     }
                 }
+            }
+        }
+    }
+
+    #viewCarrito{
+        color: $color_celeste-1;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        .carrItem{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            min-width: 100%;
+            div{
+                padding: 20px;
             }
         }
     }

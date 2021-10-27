@@ -1,12 +1,8 @@
-    //array carrito
-let prevCarrito = [];
-    //json
+//json
 const estoreJSON = "js/ecomerse.json";
-
+let carrito = [];
 $(document).ready(function() {
 
-
-    
     $.getJSON(estoreJSON, (req, res) => {
         if(res === "success"){
             let infoEstore = req;
@@ -47,68 +43,82 @@ $(document).ready(function() {
                     })
                 // ---------------------------------------------------
                 // seccion para el carrito
-                    $(`#btnBuy${part.model}`).click(() => {
-                        let subTotal = prevCarrito.filter(c => c.model === part.model).length;
-                        if (subTotal == 0) {
-                            prevCarrito.push(part);
-                            console.log(prevCarrito);
-                            $("#viewCarrito").append(`<article class="carrItem" id="carr${part.model}">
-                            <div class="carrItemModel">${part.model} ${part.mark} ${part.model} ${part.mark}</div>
-                            <div class="carrItemCant${part.model}" id="carrItemCant${part.model}"></div>
-                                </div>
-                                <button id="sumItem${part.model}">+</button>
-                                <button id="resItem${part.model}">-</button>
-                                <div class=carrItemPrice>$¬${part.price}</div>
-                                </article>`)
-                                $(`#carrItemCant${part.model}`).text(subTotal += 1);
 
+                    
+
+                    $(`#btnBuy${part.model}`).click(() => {
+                        let subCant = carrito.filter(c => c.model === part.model).length;
+                        if (subCant == 0) {
+                            part.cant = 1
+                            part.subTotal = part.price;
+                            carrito.push(part);
+                            
+                            $("#viewCarrito").append(`<article class="carrItem" id="carr${part.model}">
+                                <div class="carrItemModel">${part.model} ${part.mark}</div>
+                                <div class="carrItemCant${part.model}" id="carrItemCant${part.model}"></div>
+                                <div class="btnsModCant">
+                                    <button id="sumItem${part.model}">+</button>
+                                    <button id="resItem${part.model}">-</button>
+                                </div>
+                                <div class="carrItemPrice" id="carrItemPrice${part.model}"></div>
+                                </article>`)
+                                $(`#carrItemCant${part.model}`).text(subCant += 1);
+                                $(`#carrItemPrice${part.model}`).text(`$¬${part.subTotal}`);
+                                console.log(carrito);
 
                                 // Sumar y restar items del carrito
                                 $(`#sumItem${part.model}`).click(()=> {
-                                    subTotal += 1
-                                    $(`#carrItemCant${part.model}`).text(subTotal);
-                                    console.log(subTotal);
-                                });
-
-                                $(`#resItem${part.model}`).click(()=> {
-                                    if (subTotal > 1) {
-                                        subTotal -= 1
-                                        console.log(subTotal);
-                                        $(`#carrItemCant${part.model}`).text(subTotal);
-                                        console.log(prevCarrito.model)
-                                    }else if (subTotal = 1){
-                                        $(`#carr${part.model}`).remove()
-                                        subTotal = 0 ;
-                                        for (let i = 0; i < prevCarrito.length; i++) {
-                                            if (prevCarrito[i].model === part.model) {
-                                                prevCarrito.splice(i, 1);
-                                            }
-                                            
-                                        }
-                                        console.log(subTotal);
-                                        console.log(prevCarrito);
-
+                                    subCant += 1
+                                    $(`#carrItemCant${part.model}`).text(subCant);
+                                    let modCant = carrito.find(x => x.model == part.model)
+                                    if(modCant){
+                                        modCant.cant++
                                     }
-                                    
+                                    let modSubTotal = carrito.find(x => x.model == part.model)
+                                    if(modSubTotal){
+                                        modSubTotal.subTotal = part.cant * part.price;
+                                    }
+                                    $(`#carrItemPrice${part.model}`).text(`$¬${part.subTotal}`);
+                                    console.log(carrito);
+                                });
+                                $(`#resItem${part.model}`).click(()=> {
+                                    if (subCant > 1) {
+                                        subCant -= 1
+                                        $(`#carrItemCant${part.model}`).text(subCant);
+                                        let modCant = carrito.find(x => x.model == part.model)
+                                        if(modCant){
+                                            modCant.cant--
+                                            console.log(carrito)
+                                        }
+                                        let modSubTotal = carrito.find(x => x.model == part.model)
+                                        if(modSubTotal){
+                                            modSubTotal.subTotal = part.cant * part.price;
+                                        }
+                                        $(`#carrItemPrice${part.model}`).text(`$¬${part.subTotal}`);
+                                        console.log(carrito);
+                                    }else if (subCant = 1){
+                                        $(`#carr${part.model}`).remove()
+                                        subCant = 0 ;
+                                        for (let i = 0; i < carrito.length; i++) {
+                                            if (carrito[i].model === part.model) {
+                                                carrito.splice(i, 1);
+                                            }
+                                        }
+                                    }
                                 })
+
                             }else {
                                 alert("este producto ya fue agregado al carrito");
                             }
                             
-
                             $("#resetCarrito").click(() => {
-                                prevCarrito = [];
+                                carrito = [];
                                 $("#viewCarrito").html('');
                             })
                     });
 
-                // ---------------------------------------------------
                 }
             })
         }
+    })
 })
-
-
-
-})
-

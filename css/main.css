@@ -518,6 +518,9 @@ footer .footer_grid .firm {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+.containerEstore h2 {
+  color: #34eefd;
+}
 .containerEstore .filtroEstore {
   color: #34eefd;
   display: Flex;
@@ -631,4 +634,30 @@ footer .footer_grid .firm {
 }
 .containerEstore .viewEstore .product__tarjet .product__tarjet__btns .product__tarjet__btns__sec button {
   width: 50%;
+}
+.containerEstore #viewCarrito {
+  color: #34eefd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+}
+.containerEstore #viewCarrito .carrItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 100%;
+}
+.containerEstore #viewCarrito .carrItem div {
+  padding: 20px;
 }
